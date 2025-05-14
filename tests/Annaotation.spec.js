@@ -14,9 +14,14 @@ test.fixme("test_Annotaions_3", () => {
 
 let page;
 test("test_Annotaions_4", async ({ browser }) => {
+  //test.fail()
   // test.slow(); it multilplies 3times the timeout
   test.setTimeout(3000);
   page = await browser.newPage();
   await page.goto("https://www.lambdatest.com/selenium-playground/");
   console.log("this is slow  annotation");
 });
+
+test.fail('pooaj',()=>{
+
+})
